@@ -1,0 +1,14 @@
+---
+title: Tokens
+---
+
+<div class="title-bar">
+  <h1>{{page.title}}</h1>
+  <nav>
+    <a href="" class="small-button">Create a link token</a>
+  </nav>
+</div>
+
+<hr/>
+
+{{token_table}}

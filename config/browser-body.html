@@ -1,0 +1,20 @@
+<body>
+  {{page.include("config/header.html")}}
+
+  <section>
+    <div id="-browser">
+      <nav>
+        <a href="">Applications</a>
+        <a href="">Sites</a>
+        <a href="" class="selected">Networks</a>
+      </nav>
+      <main>
+
+{{page.content}}
+
+      </main>
+    </div>
+  </section>
+
+  {{page.include("config/footer.html")}}
+</body>

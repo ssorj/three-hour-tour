@@ -1,0 +1,14 @@
+---
+title: Link token <span class="name">company-co-497c</span>
+---
+
+<div class="title-bar">
+  <h1>{{page.title}}</h1>
+  <nav>
+    <a href="" class="small-button">Download</a>
+    <a href="" class="small-button">Revoke</a>
+    <a href="" class="small-button">Edit properties</a>
+  </nav>
+</div>
+
+{{token_properties}}

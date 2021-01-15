@@ -1,0 +1,96 @@
+---
+title: Network
+---
+
+<div class="title-bar">
+  <h1>{{page.title}}</h1>
+  <nav>
+    <a href="" class="small-button">Download a link token</a>
+    <a href="" class="small-button">Upload a link token</a>
+  </nav>
+</div>
+
+<div class="tabs">
+  <nav>
+    <a href="?tab=overview">Overview</a>
+    <a href="?tab=details">Details</a>
+  </nav>
+
+  <div id="overview">
+    <h2>Contents</h2>
+
+    <ul>
+      <li><a href="">Linking a remote site to this site</a></li>
+      <li><a href="">Linking this site to a remote site</a></li>
+      <li><a href="">Linking sites using the command line</a></li>
+      <li><a href="">Exposing services on the network</a></li>
+      <li><a href="">Connecting to services on the network</a></li>
+    </ul>
+
+    <h2>Linking a remote site to this site</h2>
+
+    <ol>
+      <li>
+        <p>{{lipsum(10)}}</p>
+
+        <nav>
+          <a href="" class="small-button">Download a link token</a>
+        </nav>
+
+        <p></p>
+      </li>
+
+      <li>
+        <p>{{lipsum(15)}}</p>
+      </li>
+    </ol>
+
+    <h2>Linking this site to a remote site</h2>
+
+    <ol>
+      <li>
+        <p>{{lipsum(10)}}</p>
+      </li>
+
+      <li>
+        <p>{{lipsum(15)}}</p>
+
+        <nav>
+          <a href="" class="small-button">Upload a link token</a>
+        </nav>
+      </li>
+    </ol>
+
+    <h2>Linking sites using the command line</h2>
+
+    <p>{{lipsum(20)}}</p>
+
+    <nav>
+      <a href="" class="small-button">Download the command-line tool</a>
+    </nav>
+
+    <p>{{lipsum(20)}}</p>
+
+    <h2>Exposing services on the network</h2>
+
+    <p>{{lipsum(15)}}</p>
+
+    <pre><code>$ skupper expose deployment/<i>&lt;deployment-name&gt;</i></code></pre>
+
+    <h2>Connecting to services on the network</h2>
+
+    <p>{{lipsum(15)}}</p>
+
+    {{connection_url_table}}
+  </div>
+  <div id="details">
+    <div class="section-bar">
+      <h2>Properties</h2>
+      <nav>
+        <a href="" class="small-button">Edit properties</a>
+      </nav>
+    </div>
+
+    {{network_properties}}
+  </div>
+</div>

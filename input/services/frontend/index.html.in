@@ -1,0 +1,24 @@
+---
+title: Service <span class="name">frontend</span>
+---
+
+<div class="title-bar">
+  <h1>{{page.title}}</h1>
+  <nav>
+    <a href="" class="small-button">Edit properties</a>
+    <a href="" class="small-button">Delete</a>
+  </nav>
+</div>
+
+<hr/>
+
+{{service_properties}}
+
+<div class="section-bar">
+  <h2>Bindings</h2>
+  <nav>
+    <a href="" class="small-button">Create a binding</a>
+  </nav>
+</div>
+
+{{binding_table}}

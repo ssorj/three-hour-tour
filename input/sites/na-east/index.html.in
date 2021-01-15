@@ -1,0 +1,19 @@
+---
+title: Linked site <span class="name">na-east</span>
+---
+
+<div class="title-bar">
+  <h1>{{page.title}}</h1>
+  <nav>
+    <a href="" class="small-button">Unlink</a>
+    <a href="" class="small-button">Edit properties</a>
+  </nav>
+</div>
+
+{{site_properties}}
+
+<div class="section-bar">
+  <h2>Deployments</h2>
+</div>
+
+{{deployment_table}}

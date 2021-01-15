@@ -1,0 +1,28 @@
+<body>
+  {{page.include("config/header.html")}}
+
+  <section>
+    <div id="-browser">
+      <nav>
+        <a href="{{site_url}}/index.html">Network</a>
+        <a href="{{site_url}}/services/index.html">Services</a>
+        <a href="{{site_url}}/sites/index.html">Sites</a>
+        <a href="{{site_url}}/deployments/index.html">Deployments</a>
+        <a href="{{site_url}}/processes/index.html">Processes</a>
+        <a href="{{site_url}}/tokens/index.html">Tokens</a>
+      </nav>
+      <main>
+        <div id="-path-nav">
+
+{{path_nav(page)}}
+
+        </div>
+
+{{page.content}}
+
+      </main>
+    </div>
+  </section>
+
+  {{page.include("config/footer.html")}}
+</body>
