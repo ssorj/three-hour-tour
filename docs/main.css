@@ -168,7 +168,6 @@ th {
 }
 
 hr {
-    margin: 2em 0;
     border-bottom: 1px solid #999;
 }
 
@@ -298,11 +297,11 @@ a.small-button {
     display: inline-block;
     border: 1px solid #999;
     border-radius: 0.2em;
-    padding: 0.4em 0.8em;
+    padding: 0.3em 0.7em;
     text-align: center;
     color: black;
     font-weight: 400;
-    font-size: 0.95em;
+    font-size: 0.9em;
 }
 
 a.gray-out {
@@ -408,9 +407,8 @@ section > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -0.4em 0 1em 0;
-    border-bottom: 1px solid #999;
-    padding-bottom: 1.6em;
+    margin-bottom: 0.8em;
+    height: 2em;
 }
 
 .title-bar > * {
@@ -427,11 +425,6 @@ section > div {
 
 .title-bar > nav > a {
     margin-left: 1em;
-}
-
-.title-bar-tabs {
-    border-bottom: inherit;
-    padding-bottom: 0;
 }
 
 /* --- */
@@ -532,12 +525,7 @@ nav.path-nav > span.path-separator {
 }
 
 #-path-nav {
-    border-bottom: inherit;
-    margin-bottom: -1em;
-}
-
-#-path-nav > div {
-    padding: 0.6em 0;
+    margin-bottom: 0.8em;
 }
 
 /* --- */
@@ -554,6 +542,7 @@ span.material-icons-outlined.small {
 
 .tabs > nav {
     border-bottom: 1px solid #999;
+    margin-top: -0.4em;
     margin-bottom: 1.6em;
 }
 

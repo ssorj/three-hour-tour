@@ -33,10 +33,45 @@ Element.prototype.$$ = function () {
 };
 
 window.addEventListener("load", () => {
-    let pathNav = $("#-path-nav > div > nav");
+    let pathNav = $("#-path-nav > nav");
 
     if (pathNav.$$("a").length < 2) {
         $("#-path-nav").style.display = "none";
+    }
+});
+
+window.addEventListener("load", () => {
+    function splitPath(path) {
+        let index = path.lastIndexOf("/");
+        let parent = path.substring(0, index);
+        let child = path.substring(index + 1);
+
+        return [parent, child];
+    }
+
+    function lastDir(path) {
+        let dirPath = splitPath(path)[0];
+        let dirName = splitPath(dirPath)[1];
+
+        return dirName;
+    }
+
+    let nav = $("#-browser > nav");
+
+    if (!nav) return;
+
+    let href = window.location.href.toString();
+    let child = nav.firstChild;
+    let currentDir = lastDir(href);
+
+    while (child) {
+        if (child.nodeType === 1) {
+            if (child.href && lastDir(child.href) === currentDir) {
+                child.classList.add("selected");
+            }
+        }
+
+        child = child.nextSibling;
     }
 });
 

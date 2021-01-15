@@ -1,31 +1,156 @@
-
 <!DOCTYPE html>
-<!--
- -
- - Licensed to the Apache Software Foundation (ASF) under one
- - or more contributor license agreements.  See the NOTICE file
- - distributed with this work for additional information
- - regarding copyright ownership.  The ASF licenses this file
- - to you under the Apache License, Version 2.0 (the
- - "License"); you may not use this file except in compliance
- - with the License.  You may obtain a copy of the License at
- -
- -   http://www.apache.org/licenses/LICENSE-2.0
- -
- - Unless required by applicable law or agreed to in writing,
- - software distributed under the License is distributed on an
- - "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- - KIND, either express or implied.  See the License for the
- - specific language governing permissions and limitations
- - under the License.
- -
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Redirect</title>
-    <meta http-equiv="refresh" content="0; url=networks/index.html"/>
+    <title>Three Hour Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic|Ubuntu+Mono:400" type="text/css"/>
+    <link rel="stylesheet" href="/three-hour-tour/main.css" type="text/css"/>
+    <link rel="icon" href="" type="image/png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" defer="defer">
+    <script type="text/javascript" src="/three-hour-tour/main.js" defer="defer"></script>
+
+
+
+
   </head>
-  <body>
-    <a href="networks/index.html">Redirect</a>
-  </body>
+
+<body>
+  <header>
+  <div>
+    <nav id="-left-site-nav">
+      <a href="/three-hour-tour/index.html" id="-logotype"><span class="material-icons-outlined">anchor</span> Three Hour Tour</a>
+    </nav>
+    <nav id="-right-site-nav">
+      <a href="">Hi, Ginger</a>
+    </nav>
+  </div>
+</header>
+
+
+  <section>
+    <div id="-browser">
+      <nav>
+        <a href="/three-hour-tour/index.html">Network</a>
+        <a href="/three-hour-tour/services/index.html">Services</a>
+        <a href="/three-hour-tour/sites/index.html">Sites</a>
+        <a href="/three-hour-tour/deployments/index.html">Deployments</a>
+        <a href="/three-hour-tour/processes/index.html">Processes</a>
+        <a href="/three-hour-tour/tokens/index.html">Tokens</a>
+      </nav>
+      <main>
+        <div id="-path-nav">
+
+<nav class="path-nav"></nav>
+
+        </div>
+
+
+<div class="title-bar">
+  <h1>Network</h1>
+  <nav>
+    <a href="" class="small-button">Download a link token</a>
+    <a href="" class="small-button">Upload a link token</a>
+  </nav>
+</div>
+
+<div class="tabs">
+  <nav>
+    <a href="?tab=overview">Overview</a>
+    <a href="?tab=details">Details</a>
+  </nav>
+
+  <div id="overview">
+    <h2>Contents</h2>
+
+    <ul>
+      <li><a href="">Linking a remote site to this site</a></li>
+      <li><a href="">Linking this site to a remote site</a></li>
+      <li><a href="">Linking sites using the command line</a></li>
+      <li><a href="">Exposing services on the network</a></li>
+      <li><a href="">Connecting to services on the network</a></li>
+    </ul>
+
+    <h2>Linking a remote site to this site</h2>
+
+    <ol>
+      <li>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim.</p>
+
+        <nav>
+          <a href="" class="small-button">Download a link token</a>
+        </nav>
+
+        <p></p>
+      </li>
+
+      <li>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget.</p>
+      </li>
+    </ol>
+
+    <h2>Linking this site to a remote site</h2>
+
+    <ol>
+      <li>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim.</p>
+      </li>
+
+      <li>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget.</p>
+
+        <nav>
+          <a href="" class="small-button">Upload a link token</a>
+        </nav>
+      </li>
+    </ol>
+
+    <h2>Linking sites using the command line</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget maximus lacinia lorem nulla auctor.</p>
+
+    <nav>
+      <a href="" class="small-button">Download the command-line tool</a>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget maximus lacinia lorem nulla auctor.</p>
+
+    <h2>Exposing services on the network</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget.</p>
+
+    <pre><code>$ skupper expose deployment/<i>&lt;deployment-name&gt;</i></code></pre>
+
+    <h2>Connecting to services on the network</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vestibulum enim urna ornare pellentesque felis eget.</p>
+
+    <table style="width: 50%;"><tbody><tr><th>Service</th><th>Connection URL</th></tr><tr><td>frontend</td><td><a href="">http://frontend:8080</a></td></tr><tr><td>inventory</td><td><a href="">http://inventory:8080</a></td></tr><tr><td>orders</td><td><a href="">http://orders:8080</a></td></tr><tr><td>database</td><td><a href="">jdbc://database:5432</a></td></tr><tr><td>reviews</td><td><a href="">http://reviews:8080</a></td></tr></tbody></table>
+  </div>
+  <div id="details">
+    <div class="section-bar">
+      <h2>Properties</h2>
+      <nav>
+        <a href="" class="small-button">Edit properties</a>
+      </nav>
+    </div>
+
+    <table class="properties"><tbody><tr><td>Name</td><td>company-co</td></tr><tr><td>Status</td><td>Active</td></tr><tr><td>Linked sites</td><td>na-east, na-west, and headquarters</td></tr><tr><td>Created</td><td>4 hours ago</td></tr></tbody></table>
+  </div>
+</div>
+
+
+      </main>
+    </div>
+  </section>
+
+  <footer>
+  <div>
+    <!-- <a style="color: #ccc; font-size: 0.9em; font-style: italic;" href="/three-hour-tour/networks-alternate/index.html">Alternate network index</a><br> -->
+    <!-- <a style="color: #ccc; font-size: 0.9em; font-style: italic;" href="/three-hour-tour/site/index.html">Remote site</a> -->
+  </div>
+</footer>
+
+</body>
+
+
 </html>
