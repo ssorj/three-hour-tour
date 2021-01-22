@@ -1,5 +1,5 @@
 ---
-title: Network
+title: Site <span class="name">na-east</span>
 ---
 
 <div class="title-bar">
@@ -14,6 +14,7 @@ title: Network
   <nav>
     <a href="?tab=overview">Overview</a>
     <a href="?tab=details">Details</a>
+    <a href="?tab=tokens">Tokens</a>
   </nav>
 
   <div id="overview">
@@ -84,13 +85,17 @@ title: Network
     {{connection_url_table}}
   </div>
   <div id="details">
-    <div class="section-bar">
-      <h2>Properties</h2>
+  </div>
+  <div id="tokens">
+    <div class="title-bar">
+      <h1>{{page.title}}</h1>
       <nav>
-        <a href="" class="small-button">Edit properties</a>
+        <a href="" class="small-button">Create a token</a>
       </nav>
     </div>
 
-    {{network_properties}}
+    <hr/>
+
+    {{token_table}}
   </div>
 </div>

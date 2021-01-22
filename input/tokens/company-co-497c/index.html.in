@@ -1,5 +1,5 @@
 ---
-title: Link token <span class="name">company-co-497c</span>
+title: Token <span class="name">company-co-497c</span>
 ---
 
 <div class="title-bar">
@@ -10,5 +10,7 @@ title: Link token <span class="name">company-co-497c</span>
     <a href="" class="small-button">Edit properties</a>
   </nav>
 </div>
+
+<hr/>
 
 {{token_properties}}

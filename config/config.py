@@ -15,15 +15,6 @@ def html_link(content, href=""):
 def table_button(content, href=""):
     return f"<a class=\"table-button\" href=\"{href}\">{content}</a>"
 
-props = (
-    ("Name", "company-co"),
-    ("Status", "Active"),
-    ("Linked sites", "na-east, na-west, and headquarters"),
-    ("Created", "4 hours ago"),
-)
-
-network_properties = html_table(props, class_="properties")
-
 def cell(column_index, value):
     if column_index == 1:
         value = html_link(value)

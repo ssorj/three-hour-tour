@@ -1,5 +1,5 @@
 ---
-title: Linked site <span class="name">na-east</span>
+title: Site <span class="name">na-east</span>
 ---
 
 <div class="title-bar">
@@ -9,6 +9,8 @@ title: Linked site <span class="name">na-east</span>
     <a href="" class="small-button">Edit properties</a>
   </nav>
 </div>
+
+<hr/>
 
 {{site_properties}}
 
