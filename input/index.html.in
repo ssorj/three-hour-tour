@@ -15,6 +15,7 @@ title: Site <span class="name">na-east</span>
     <a href="?tab=overview">Overview</a>
     <a href="?tab=details">Details</a>
     <a href="?tab=tokens">Tokens</a>
+    <a href="?tab=sites">Linked sites</a>
   </nav>
 
   <div id="overview">
@@ -88,14 +89,19 @@ title: Site <span class="name">na-east</span>
   </div>
   <div id="tokens">
     <div class="title-bar">
-      <h1>{{page.title}}</h1>
+      <h1>Tokens</h1>
       <nav>
         <a href="" class="small-button">Create a token</a>
       </nav>
     </div>
 
-    <hr/>
-
     {{token_table}}
+  </div>
+  <div id="sites">
+    <div class="title-bar">
+      <h1>Linked sites</h1>
+    </div>
+
+    {{site_table}}
   </div>
 </div>

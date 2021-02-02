@@ -42,7 +42,6 @@ def cell(column_index, value):
 headings = "Name", "Status", "Site type", "Cost", "Linked", "Actions"
 
 data = (
-    ("na-east", "OK", "OpenShift", 2, "2 days ago", None),
     ("na-west", "OK", "Podman", 1, "1/8/2020", None),
     ("headquarters", "Error: Unreachable", "OpenShift", 1, "3/15/2020", None),
 )
