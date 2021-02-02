@@ -540,7 +540,11 @@ span.material-icons-outlined.small {
 
 /* --- */
 
+.tabs {
+}
+
 .tabs > nav {
+    diplay: flex;
     border-bottom: 1px solid #999;
     margin-top: -0.4em;
     margin-bottom: 1.6em;
@@ -548,19 +552,15 @@ span.material-icons-outlined.small {
 
 .tabs > nav > a {
     display: inline-block;
-    text-align: center;
     padding: 0.4em 0;
     margin-right: 2em;
-    font-weight: 300;
-    color: black;
-    letter-spacing: 0.3px;
+    color: #666;
 }
 
 .tabs > nav > a:hover,
 .tabs > nav > a.selected {
     border-bottom: 2px solid #999;
-    font-weight: 400;
-    letter-spacing: 0;
+    color: black;
 }
 
 .tabs > div {
