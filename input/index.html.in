@@ -6,7 +6,6 @@ title: Site <span class="name">na-east</span>
   <h1>{{page.title}}</h1>
   <nav>
     <a href="" class="small-button">Download a link token</a>
-    <a href="" class="small-button">Upload a link token</a>
   </nav>
 </div>
 
@@ -19,43 +18,27 @@ title: Site <span class="name">na-east</span>
   </nav>
 
   <div id="overview">
-    <h2>Contents</h2>
+    <h2>Status</h2>
 
-    <ul>
-      <li><a href="">Linking a remote site to this site</a></li>
-      <li><a href="">Linking this site to a remote site</a></li>
-      <li><a href="">Linking sites using the command line</a></li>
-      <li><a href="">Exposing services on the network</a></li>
-      <li><a href="">Connecting to services on the network</a></li>
-    </ul>
+    <p>This site is currently linked to <a href="?tab=sites">2 other sites</a>.
+    There are <a href="/services/index.html">5 services</a> exposed on the network.</p>
 
-    <h2>Linking a remote site to this site</h2>
+    <h2>Creating a link to a remote site</h2>
 
     <ol>
       <li>
-        <p>{{lipsum(10)}}</p>
-
-        <nav>
-          <a href="" class="small-button">Download a link token</a>
-        </nav>
-
-        <p></p>
+        <p><b>Remote site:</b> Go to the Skupper console at the remote site (not this
+        console).</p>
       </li>
 
       <li>
-        <p>{{lipsum(15)}}</p>
-      </li>
-    </ol>
-
-    <h2>Linking this site to a remote site</h2>
-
-    <ol>
-      <li>
-        <p>{{lipsum(10)}}</p>
+        <p><b>Remote site:</b> Click the <b>Download a link token</b> button.  Save the
+        token to a local file.</p>
       </li>
 
       <li>
-        <p>{{lipsum(15)}}</p>
+        <p><b>This site:</b> Click the <b>Upload a link token</b> button below.  Provide
+        the token file from the previous step.</p>
 
         <nav>
           <a href="" class="small-button">Upload a link token</a>
@@ -63,27 +46,16 @@ title: Site <span class="name">na-east</span>
       </li>
     </ol>
 
-    <h2>Linking sites using the command line</h2>
-
-    <p>{{lipsum(20)}}</p>
-
-    <nav>
-      <a href="" class="small-button">Download the command-line tool</a>
-    </nav>
-
-    <p>{{lipsum(20)}}</p>
-
-    <h2>Exposing services on the network</h2>
-
-    <p>{{lipsum(15)}}</p>
-
-    <pre><code>$ skupper expose deployment/<i>&lt;deployment-name&gt;</i></code></pre>
-
     <h2>Connecting to services on the network</h2>
 
-    <p>{{lipsum(15)}}</p>
-
     {{connection_url_table}}
+
+    <h2>More information</h2>
+
+    <ul>
+      <li><a href="">Linking sites using the command line</a></li>
+      <li><a href="">Exposing services using the command line</a></li>
+    </ul>
   </div>
   <div id="details">
   </div>
