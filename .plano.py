@@ -17,14 +17,20 @@
 # under the License.
 #
 
-FROM centos:7
+from transom.planocommands import *
 
-RUN yum -q -y update && yum -q clean all
+@command
+def publish(verbose=False):
+    """
+    Publish site output
+    """
 
-RUN yum -y install epel-release
+    ENV["SITE_URL"] = "/three-hour-tour"
 
-RUN yum -y install make python36
+    with project_env():
+        args = ["render", site.config_dir, site.input_dir, "docs", "--force"]
 
-COPY . /root/plano
-WORKDIR /root/plano
-CMD ["make", "clean", "test", "install", "PREFIX=/usr/local"]
+        if verbose:
+            args.append("--verbose")
+
+        TransomCommand().main(args)
